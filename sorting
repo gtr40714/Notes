@@ -1,0 +1,22 @@
+class SortingCollection {
+	
+	elements = [] // N elements
+
+	getElements() {
+		return this.elements; // O(1)
+	}
+
+	add(e) {
+		this.elements.push(e);
+		this.elements.sort(); // O(N)
+	}
+
+	remove(e) {
+		const index = this.elements.indexOf(e);
+		if(index >= 0) {
+			this.elements.splice(index, 1);
+			this.elements.sort(); // O(N)
+		}
+	}
+
+}
