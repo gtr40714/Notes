@@ -54,3 +54,10 @@ git fetch
 # 將遠端專案複製至本機
 git clone https://github.com/gtr40714/game.git
 ```
+
+## Log
+
+```sh
+# 查看歷史紀錄
+git log
+```
